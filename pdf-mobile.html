@@ -157,20 +157,53 @@
             margin-right: 8px;
         }
 
-        .image-placeholder {
-            background: linear-gradient(135deg, #f0f4f8, #e8ecf0);
-            border: 2px dashed var(--border-color);
-            border-radius: 10px;
-            padding: 30px;
-            text-align: center;
+        /* 图片样式 */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
             margin: 20px 0;
-            color: var(--text-medium);
         }
 
-        .image-placeholder p {
-            font-size: 0.95em;
-            line-height: 1.6;
-            margin-bottom: 8px;
+        .image-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-item:hover {
+            transform: scale(1.02);
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            padding: 8px;
+            text-align: center;
+            font-size: 0.85em;
+            color: var(--text-medium);
+            background: #f8f9fa;
+        }
+
+        .single-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        .single-image img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .summary-box {
@@ -257,6 +290,10 @@
             li {
                 padding-left: 24px;
             }
+
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -325,10 +362,8 @@
 
             <p>整个项目按照"路径化设计"进行，而不是一次性决策。</p>
 
-            <div class="image-placeholder">
-                <p><strong>[图示：三阶段成长路径示意图]</strong></p>
-                <p>第一阶段 → 第二阶段 → 第三阶段</p>
-            </div>
+            <!-- 三阶段示意图 -->
+            <img src="images/image.png" alt="三阶段成长路径示意图" class="single-image">
 
             <h3 style="margin: 20px 0 10px; color: var(--primary-color); font-size: 1.1em;">第一阶段：中国基础阶段</h3>
             <p>学生在国内完成初中或高中基础学习，建立基本学科能力与学习习惯。</p>
@@ -387,27 +422,74 @@
 
             <h3 style="margin: 20px 0 10px; color: var(--primary-color); font-size: 1.1em;">🏠 住宿方案：Antel Grand Village（核心支点）</h3>
             
-            <div class="image-placeholder">
-                <p><strong>[图示：高端舒适的住宿环境]</strong></p>
+            <!-- 别墅外观和小区 -->
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/image.jpeg" alt="高端舒适的住宿环境">
+                    <div class="image-caption">高端舒适的住宿环境</div>
+                </div>
+                <div class="image-item">
+                    <img src="images/image (1).jpeg" alt="封闭式安保小区大门">
+                    <div class="image-caption">封闭式安保小区大门</div>
+                </div>
             </div>
 
-            <div class="image-placeholder">
-                <p><strong>[图示：封闭式安保小区大门、3 层独栋别墅外观、别墅内部走廊]</strong></p>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/image (2).jpeg" alt="3 层独栋别墅外观">
+                    <div class="image-caption">3 层独栋别墅外观</div>
+                </div>
+                <div class="image-item">
+                    <img src="images/image (3).jpeg" alt="别墅内部走廊">
+                    <div class="image-caption">别墅内部走廊</div>
+                </div>
             </div>
 
-            <div class="image-placeholder">
-                <p><strong>[图示：3 层观景露台、温馨齐全的室内空间、宽敞明亮学生卧室]</strong></p>
+            <!-- 室内空间 -->
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/image (4).jpeg" alt="3 层观景露台">
+                    <div class="image-caption">3 层观景露台</div>
+                </div>
+                <div class="image-item">
+                    <img src="images/image (5).jpeg" alt="温馨齐全的室内空间">
+                    <div class="image-caption">温馨齐全的室内空间</div>
+                </div>
             </div>
 
-            <div class="image-placeholder">
-                <p><strong>[图示：独立卫浴空间、安全便捷的室内楼梯、完善的社区配套设施]</strong></p>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/image (6).jpeg" alt="宽敞明亮学生卧室">
+                    <div class="image-caption">宽敞明亮学生卧室</div>
+                </div>
+                <div class="image-item">
+                    <img src="images/image (7).jpeg" alt="独立卫浴空间">
+                    <div class="image-caption">独立卫浴空间</div>
+                </div>
             </div>
 
-            <div class="image-placeholder">
-                <p><strong>[图示：专业健身房、标准篮球场、专业网球场、恒温游泳池]</strong></p>
+            <!-- 社区设施 -->
+            <h3 style="margin: 20px 0 10px; color: var(--primary-color); font-size: 1.1em;">🏊 完善的社区配套设施</h3>
+            
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/image (8).jpeg" alt="专业健身房">
+                    <div class="image-caption">专业健身房</div>
+                </div>
+                <div class="image-item">
+                    <img src="images/image (9).jpeg" alt="标准篮球场">
+                    <div class="image-caption">标准篮球场</div>
+                </div>
             </div>
 
-            <p>项目已在菲律宾 Cavite 的 Antel Grand Village 社区配置别墅资源：</p>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/image (10).jpeg" alt="专业网球场和恒温游泳池">
+                    <div class="image-caption">专业网球场和恒温游泳池</div>
+                </div>
+            </div>
+
+            <p style="margin-top: 20px;">项目已在菲律宾 Cavite 的 Antel Grand Village 社区配置别墅资源：</p>
             
             <ul>
                 <li>两套独立别墅（3 层结构）</li>
