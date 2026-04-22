@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)file:///home/asin/.openclaw/workspace/%E7%BF%B0%E6%9E%97%E4%B8%AD%E5%8D%8E%E4%B9%A6%E9%99%A2%E5%9B%BD%E9%99%85%E9%83%A8.html -->
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翰林中华书院国际部项目说明（一期验证版）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* 中国 80 后父母喜欢的风格配色：稳重、专业、喜庆 */
+            --primary-color: #1e3a5f;   /* 深海蓝 - 代表专业、信任、教育 */
+            --secondary-color: #c41e3a;  /* 中国红 - 代表热情、成功、喜庆 */
+            --accent-color: #2d8b47;     /* 翡翠绿 - 代表成长、希望 */
+            --text-dark: #2c3e50;
+            --text-medium: #4a5f6e;
+            --text-light: #6c7d8c;
+            --bg-offwhite: #fcfdfb;
+            --border-color: #dbe4eb;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--text-dark);
+            background-color: var(--bg-offwhite);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 标题样式 */
+        .page-title {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 30px;
+        }
+
+        .page-title h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .page-title p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* 章节样式 */
+        section {
+            background: white;
+            padding: 35px;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 15px rgba(139, 69, 19, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--border-color);
+        }
+
+        .section-number {
+            background: linear-gradient(135deg, var(--secondary-color), #ff6b8a);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3);
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        /* 强调框样式 */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(28, 76, 120, 0.08), rgba(196, 30, 58, 0.08));
+            border-left: 5px solid var(--secondary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        /* 正文内容 */
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(245, 222, 179, 0.6), rgba(245, 222, 179, 0.8));
+            border-left: 5px solid var(--secondary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .highlight-box p {
+            text-align: left;
+            font-size: 1.05em;
+        }
+
+        /* 列表样式 */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 35px;
+            position: relative;
+            text-align: left;
+        }
+
+        /* 自定义列表标记 */
+        .custom-list-item::before {
+            content: '●';
+            color: var(--secondary-color);
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* 带编号的列表 */
+        .numbered-list {
+            counter-reset: custom-counter;
+        }
+
+        .numbered-list li::before {
+            content: counter(custom-counter) '．';
+            counter-increment: custom-counter;
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* 强调要点 */
+        .key-point {
+            background: linear-gradient(135deg, rgba(28, 76, 120, 0.08), rgba(196, 30, 58, 0.08));
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* 生活条件图片样式 - 核心优化部分 */
+        .living-condition-gallery {
+            margin: 30px 0;
+            width: 100%;
+        }
+
+        .gallery-title {
+            font-size: 1.1em;
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .image-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            /* 新增：图片加载失败时显示备用背景 */
+            background-color: #f5f5f5;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="%23cccccc" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-card p {
+            padding: 10px;
+            background-color: white;
+            font-size: 0.9em;
+            color: var(--text-medium);
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .single-feature-image {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            max-height: 400px;
+            object-fit: cover;
+            /* 新增：图片加载失败时显示备用背景 */
+            background-color: #f5f5f5;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="%23cccccc" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* 项目特性强调 */
+        .feature-highlight {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            margin: 15px 0;
+            background: linear-gradient(135deg, rgba(245, 222, 179, 0.5), rgba(255, 255, 255, 0.8));
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-icon {
+            font-size: 2em;
+        }
+
+        /* 总结框 */
+        .summary-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        .summary-box h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-light);
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* ========== 移动端优化样式 ========== */
+        @media (max-width: 768px) {
+            .page-title {
+                padding: 40px 15px 25px;
+            }
+            
+            .page-title h1 {
+                font-size: 1.6em;
+                line-height: 1.3;
+                letter-spacing: 1px;
+            }
+            
+            .page-title p {
+                font-size: 0.95em;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 8px;
+            }
+            
+            .section-number {
+                width: 32px;
+                height: 32px;
+                font-size: 1em;
+            }
+            
+            .section-title {
+                font-size: 1.2em;
+            }
+
+            section {
+                padding: 25px 15px;
+                margin-bottom: 15px;
+                border-radius: 8px 8px 0 0;
+                box-shadow: none;
+                border-top: 3px solid var(--border-color);
+            }
+
+            p {
+                margin-bottom: 12px;
+            }
+
+            .highlight-box,
+            .key-point {
+                padding: 15px;
+                margin: 15px 0;
+            }
+
+            li {
+                margin-bottom: 8px;
+                padding-left: 30px;
+            }
+
+            .custom-list-item::before,
+            .numbered-list li::before {
+                font-size: 1em;
+            }
+
+            .feature-highlight {
+                flex-direction: column;
+                text-align: left;
+                padding: 18px;
+                margin: 15px 0;
+                border-radius: 8px;
+            }
+            
+            .feature-icon {
+                font-size: 1.6em;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .image-card img {
+                height: 150px;
+            }
+
+            .single-feature-image {
+                max-height: 300px;
+            }
+
+            .summary-box {
+                padding: 20px;
+                margin-top: 20px;
+                border-radius: 8px;
+            }
+
+            button,
+            a, .link-btn {
+                min-height: 44px;
+                padding: 12px 20px;
+                font-size: 1em;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-title h1 {
+                font-size: 1.35em;
+            }
+            
+            .section-number {
+                width: 28px;
+                height: 28px;
+                font-size: 0.9em;
+            }
+
+            section {
+                padding: 20px 12px;
+            }
+
+            .section-title {
+                font-size: 1.15em;
+            }
+
+            .image-card img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 页面标题 -->
+        <header class="page-title">
+            <h1>翰林中华书院国际部</h1>
+            <p>项目说明（一期验证版）</p>
+        </header>
+
+        <!-- 第一章：项目背景 -->
+        <section id="background">
+            <div class="section-header">
+                <div class="section-number">一</div>
+                <h2 class="section-title">项目背景：我们为什么要做这件事</h2>
+            </div>
+
+            <p>在当前的教育体系中，一个越来越清晰的现实是：</p>
+            
+            <div class="highlight-box">
+                <p><strong>尖子生的路径是明确的</strong>，他们会进入重点大学甚至走向更高平台；<strong>基础较弱的学生</strong>，也逐步进入职业教育体系。</p>
+                
+                <br>
+                
+                <p>但真正被忽视的，是数量庞大的<strong>"中等成绩学生"</strong>。这部分学生在国内升学体系中缺乏优势，但并不意味着他们没有潜力。相反，他们往往更需要一个不同于应试路径的成长环境。</p>
+            </div>
+
+            <p>与此同时，<strong>家长的焦虑正在发生变化</strong>：他们不再单纯追求"名校"，而是更关注——</p>
+            
+            <ul class="custom-list-item">
+                <li>孩子未来是否有出路</li>
+                <li>是否具备语言能力与国际视野</li>
+                <li>是否能够进入一个更宽的选择空间</li>
+            </ul>
+
+            <div class="key-point">
+                <p>在这样的背景下，<strong>"低成本、可落地、可持续"</strong>的国际路径，成为一个刚需。</p>
+            </div>
+        </section>
+
+        <!-- 第二章：项目定位 -->
+        <section id="positioning">
+            <div class="section-header">
+                <div class="section-number">二</div>
+                <h2 class="section-title">项目定位：不是留学，而是一条成长路径</h2>
+            </div>
+
+            <p><strong>"翰林中华书院国际部"</strong>并不是一个传统意义上的留学项目。</p>
+
+            <div class="feature-highlight" style="background: linear-gradient(135deg, rgba(210, 105, 30, 0.1), rgba(245, 222, 179, 0.6));">
+                <div class="feature-icon">🎯</div>
+                <p><strong>我们把它定义为：一个为中国普通家庭设计的国际成长路径系统</strong></p>
+            </div>
+
+            <p>学生并不是被"送出国"，而是在一个可管理、可跟踪的体系中，逐步完成以下过程：</p>
+
+            <ul class="custom-list-item">
+                <li>从应试教育 → 国际环境适应</li>
+                <li>从被动学习 → 主动成长</li>
+                <li>从单一路径 → 多元出口</li>
+            </ul>
+        </section>
+
+        <!-- 第三章：项目结构 -->
+        <section id="structure">
+            <div class="section-header">
+                <div class="section-number">三</div>
+                <h2 class="section-title">项目结构：三阶段路径设计</h2>
+            </div>
+
+            <p>整个项目按照"路径化设计"进行，而不是一次性决策。</p>
+
+            <!-- 三阶段路径示意图（替换为Base64占位图，你可替换为实际Base64编码） -->
+            <div class="living-condition-gallery">
+                <div class="gallery-title">三阶段成长路径示意图</div>
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='300' viewBox='0 0 800 300'><rect width='800' height='300' fill='%23f8f9fa' rx='12'/><text x='400' y='50' font-family='Arial' font-size='20' text-anchor='middle' fill='%231e3a5f'>三阶段成长路径：中国基础阶段 → 菲律宾过渡阶段 → 升学/就业阶段</text><rect x='50' y='100' width='200' height='120' fill='%23e8f4f8' stroke='%231e3a5f' stroke-width='2' rx='8'/><text x='150' y='140' font-family='Arial' font-size='16' text-anchor='middle' fill='%231e3a5f'>中国基础阶段</text><text x='150' y='170' font-family='Arial' font-size='12' text-anchor='middle' fill='%234a5f6e'>初中/高中基础学习</text><path d='M250 160 L300 160' stroke='%23c41e3a' stroke-width='3' marker-end='url(%23arrow)'/><rect x='320' y='100' width='200' height='120' fill='%23fdf2f8' stroke='%231e3a5f' stroke-width='2' rx='8'/><text x='420' y='140' font-family='Arial' font-size='16' text-anchor='middle' fill='%231e3a5f'>菲律宾过渡阶段</text><text x='420' y='170' font-family='Arial' font-size='12' text-anchor='middle' fill='%234a5f6e'>语言提升+环境适应</text><path d='M520 160 L570 160' stroke='%23c41e3a' stroke-width='3' marker-end='url(%23arrow)'/><rect x='590' y='100' width='200' height='120' fill='%23f5fafe' stroke='%231e3a5f' stroke-width='2' rx='8'/><text x='690' y='140' font-family='Arial' font-size='16' text-anchor='middle' fill='%231e3a5f'>升学/就业阶段</text><text x='690' y='170' font-family='Arial' font-size='12' text-anchor='middle' fill='%234a5f6e'>多国升学/本地就业</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto'><path d='M0 0 L10 5 L0 10 z' fill='%23c41e3a'/></marker></defs></svg>" alt="三阶段路径示意图：中国基础阶段→菲律宾过渡阶段→升学/就业阶段" class="single-feature-image">
+            </div>
+
+            <h3 style="margin: 25px 0 15px; color: var(--primary-color);">第一阶段：中国基础阶段</h3>
+            <p>学生在国内完成初中或高中基础学习，建立基本学科能力与学习习惯。</p>
+
+            <h3 style="margin: 25px 0 15px; color: var(--primary-color);">第二阶段：菲律宾过渡阶段（核心阶段）</h3>
+            <p>进入菲律宾翰林中华书院国际部体系，在英语环境中完成：</p>
+            
+            <ul class="custom-list-item">
+                <li>语言能力提升</li>
+                <li>学习方式转换</li>
+                <li>国际环境适应</li>
+            </ul>
+
+            <h3 style="margin: 25px 0 15px; color: var(--primary-color);">第三阶段：升学或就业阶段</h3>
+            <p>根据学生发展情况，进入：</p>
+            
+            <div class="feature-highlight" style="background: linear-gradient(135deg, rgba(245, 222, 179, 0.6), rgba(245, 222, 179, 0.8));">
+                <p>●<strong>升学路径：</strong>英国 / 澳大利亚 / 加拿大等国家继续升学，或</p>
+                <p>●<strong>就业路径：</strong>在菲律宾及相关领域就业（如酒店、护理等）</p>
+            </div>
+
+            <div class="key-point">
+                <p><strong>核心逻辑：</strong>这不是一次选择，而是一条可以不断调整的路径。</p>
+            </div>
+        </section>
+
+        <!-- 第四章：一期项目重点 -->
+        <section id="phase1-focus">
+            <div class="section-header">
+                <div class="section-number">四</div>
+                <h2 class="section-title">一期项目重点：验证模型，而非规模扩张</h2>
+            </div>
+
+            <p>本项目当前处于第一阶段：<strong>验证期</strong>。</p>
+            
+            <p>我们要验证的，不是"能不能做"，而是三个更关键的问题：</p>
+
+            <ol class="numbered-list">
+                <li><strong>国内中学是否愿意合作</strong>——是否愿意将部分学生纳入"国际路径输出"</li>
+                <li><strong>家长是否认可这一路径</strong>——是否接受"菲律宾作为过渡站"的模式</li>
+                <li><strong>学生是否能够适应并成长</strong>——是否在真实环境中发生变化</li>
+            </ol>
+
+            <div class="summary-box">
+                <h4>因此，一期目标非常明确：</h4>
+                <p>小规模、可控、可验证，而不是快速扩张</p>
+            </div>
+        </section>
+
+        <!-- 第五章：一期实施方案 -->
+        <section id="implementation">
+            <div class="section-header">
+                <div class="section-number">五</div>
+                <h2 class="section-title">一期实施方案（当前落地模式）</h2>
+            </div>
+
+            <h3 style="margin: 25px 0 15px; color: var(--primary-color);">🏠 住宿方案：Antel Grand Village（核心支点）</h3>
+            
+            <!-- 住宿环境图片展示 - 替换为实际图片的Base64编码 -->
+            <div class="living-condition-gallery">
+                <div class="gallery-title">高端舒适的住宿环境</div>
+                <div class="image-grid">
+                    <div class="image-card">
+                        <!-- 小区大门（替换为你提供的第一张图片Base64） -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/KKKKAP/2Q==" alt="Antel Grand Village 小区大门">
+                        <p>封闭式安保小区大门</p>
+                    </div>
+                    <div class="image-card">
+                        <!-- 别墅外观（替换为你提供的第三张图片Base64） -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/KKKKAP/2Q==" alt="独栋别墅外观">
+                        <p>3层独栋别墅外观</p>
+                    </div>
+                    <div class="image-card">
+                        <!-- 别墅内部走廊（替换为你提供的第四张图片Base64） -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/KKKKAP/2Q==" alt="别墅内部走廊">
+                        <p>别墅内部走廊</p>
+                    </div>
+                    <div class="image-card">
+                        <!-- 别墅露台（替换为你提供的第五张图片Base64） -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/KKKKAP/2Q==" alt="3层观景露台">
+                        <p>3层观景露台</p>
+                    </div>
+                </div>
+
+                <div class="gallery-title">温馨齐全的室内空间</div>
+                <div class="image-grid">
+                    <div class="image-card">
+                        <!-- 卧室（替换为你提供的第六张图片Base64） -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/KKKKAP/2Q==" alt="学生卧室">
+                        <p>宽敞明亮学生卧室</p>
+                    </div>
+                    <div class="image-card">
+                        <!-- 卫生间（替换为你提供的第六张图片中卫生间部分Base64） -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/KKKKAP/2Q==" alt="独立卫生间">
+                        <p>独立卫浴空间</p>
+                    </div>
+                    <div class="image-card">
+                        <!-- 别墅楼梯（替换为你提供的第七张图片Base64） -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/KKKKAP/2Q==" alt="别墅上下层楼梯">
+                        <p>安全便捷的室内楼梯</p>
+                    </div>
+                </div>
+
+                <div class="gallery-title">完善的社区配套设施</div>
+                <div class="image-grid">
+                    <div class="image-card">
+                        <!-- 健身房（替换为你提供的第八张图片Base64） -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/KKKKAP/2Q==" alt="小区健身房">
+                        <p>专业健身房</p>
+                    </div>
+                    <div class="image-card">
+                        <!-- 篮球场（替换为你提供的第九张图片Base64） -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/KKKKAP/2Q==" alt="小区篮球场">
+                        <p>标准篮球场</p>
+                    </div>
+                    <div class="image-card">
+                        <!-- 网球场（替换为你提供的第十张图片Base64） -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9/KKKKAP/2Q==" alt="小区网球场">
+                        <p>专业网球场</p>
+                    </div>
+                    <div class="image-card">
+                        <!-- 游泳池（占位图，可替换为实际图片Base64） -->
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='180' viewBox='0 0 220 180'><rect width='220' height='180' fill='%23e8f4f8' rx='8'/><text x='110' y='90' font-family='Arial' font-size='14' text-anchor='middle' fill='%231e3a5f'>恒温游泳池</text></svg>" alt="小区游泳池">
+                        <p>恒温游泳池</p>
+                    </div>
+                </div>
+            </div>
+
+            <p>项目已在菲律宾 Cavite 的 Antel Grand Village 社区配置别墅资源：</p>
+            
+            <ul class="custom-list-item">
+                <li>两套独立别墅（3 层结构）</li>
+                <li>共计约 30 人容量</li>
+                <li>封闭式社区，具备安保系统</li>
+                <li>配套设施完善（游泳池、运动场、健身房等）</li>
+            </ul>
+
+            <div class="key-point">
+                <p><strong>学生在此形成：</strong>统一住宿 + 集中管理 + 生活支持</p>
+            </div>
+
+            <h3 style="margin: 25px 0 15px; color: var(--primary-color);">🚌 通勤方案：专用接送体系</h3>
+            
+            <!-- 通勤保障图片（占位图，可替换为实际图片Base64） -->
+            <div class="living-condition-gallery">
+                <div class="gallery-title">安全便捷的通勤保障</div>
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='300' viewBox='0 0 800 300'><rect width='800' height='300' fill='%23f8f9fa' rx='12'/><text x='400' y='50' font-family='Arial' font-size='20' text-anchor='middle' fill='%231e3a5f'>专用空调接送车辆</text><rect x='100' y='80' width='600' height='180' fill='%23f5fafe' stroke='%231e3a5f' stroke-width='2' rx='8'/><rect x='150' y='120' width='500' height='100' fill='%23ffffff' stroke='%231e3a5f' stroke-width='1'/><circle cx='200' cy='220' r='30' fill='%234a5f6e'/><circle cx='600' cy='220' r='30' fill='%234a5f6e'/><text x='400' y='170' font-family='Arial' font-size='16' text-anchor='middle' fill='%231e3a5f'>每日统一接送 | 车程35-40分钟</text></svg>" alt="空调接送专车" class="single-feature-image">
+            </div>
+            
+            <ul class="custom-list-item">
+                <li>距离学校约 20 公里</li>
+                <li>车程约 35-40 分钟</li>
+                <li>每日统一空调接送车</li>
+            </ul>
+
+            <div class="feature-highlight" style="background: linear-gradient(135deg, rgba(210, 105, 30, 0.1), rgba(245, 222, 179, 0.6));">
+                <p><strong>这种模式的核心优势在于：</strong></p>
+                <ul class="custom-list-item">
+                    <li>动线可控</li>
+                    <li>安全性高</li>
+                    <li>管理集中</li>
+                </ul>
+            </div>
+
+            <h3 style="margin: 25px 0 15px; color: var(--primary-color);">📋 生活支持体系</h3>
+            
+            <!-- 生活支持图片（占位图，可替换为实际图片Base64） -->
+            <div class="living-condition-gallery">
+                <div class="gallery-title">全方位生活支持服务</div>
+                <div class="image-grid">
+                    <div class="image-card">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='180' viewBox='0 0 220 180'><rect width='220' height='180' fill='%23fdf2f8' rx='8'/><text x='110' y='90' font-family='Arial' font-size='14' text-anchor='middle' fill='%231e3a5f'>菲佣打理营养膳食</text></svg>" alt="营养均衡的日常饮食">
+                        <p>菲佣打理的营养膳食</p>
+                    </div>
+                    <div class="image-card">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='180' viewBox='0 0 220 180'><rect width='220' height='180' fill='%23e8f4f8' rx='8'/><text x='110' y='90' font-family='Arial' font-size='14' text-anchor='middle' fill='%231e3a5f'>基础医疗保障</text></svg>" alt="基础医疗保障">
+                        <p>基础医疗保障服务</p>
+                    </div>
+                    <div class="image-card">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='180' viewBox='0 0 220 180'><rect width='220' height='180' fill='%23f5fafe' rx='8'/><text x='110' y='90' font-family='Arial' font-size='14' text-anchor='middle' fill='%231e3a5f'>规律作息管理</text></svg>" alt="规律作息安排">
+                        <p>规律作息与生活管理</p>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="custom-list-item">
+                <li>配置菲佣负责日常饮食与基础生活</li>
+                <li>统一作息安排、出行车辆</li>
+                <li>基础生活、医疗保障体系</li>
+            </ul>
+
+            <div class="key-point">
+                <p><strong>核心目标：</strong>让学生在"可控环境"中完成适应，而不是完全放养。</p>
+            </div>
+
+            <h3 style="margin: 25px 0 15px; color: var(--primary-color);">📚 翰林中华书院国际部教学体系</h3>
+            
+            <!-- 教学环境图片（占位图，可替换为实际图片Base64） -->
+            <div class="living-condition-gallery">
+                <div class="gallery-title">适配过渡的教学环境</div>
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='300' viewBox='0 0 800 300'><rect width='800' height='300' fill='%23f8f9fa' rx='12'/><text x='400' y='50' font-family='Arial' font-size='20' text-anchor='middle' fill='%231e3a5f'>翰林中华书院国际部教学环境</text><rect x='50' y='80' width='700' height='180' fill='%23fdf2f8' stroke='%231e3a5f' stroke-width='2' rx='8'/><text x='400' y='150' font-family='Arial' font-size='16' text-anchor='middle' fill='%231e3a5f'>适中的学术要求 | 过程性学习 | 英语环境</text><text x='400' y='180' font-family='Arial' font-size='14' text-anchor='middle' fill='%234a5f6e'>适合中等学生过渡 | 避免一考定生死</text></svg>" alt="翰林中华书院国际部教学环境" class="single-feature-image">
+            </div>
+            
+            <ul class="custom-list-item">
+                <li>学术要求"适中但稳定"、可适应性强（特别适合中等学生）</li>
+                <li>强调"过程性学习"、避免"一考定生死"，更适合海外适应阶段</li>
+                <li>英语环境 + 实际使用、在"用"中提升，而不是"学"中提升</li>
+            </ul>
+
+            <div class="key-point">
+                <p><strong>教学的特点不是高压应试</strong>，而是一个更稳定、更适合中国学生过渡的体系。在这个体系里，学生可以完成基础学业，符合本地毕业要求，同时逐步适应英语环境。而真正的提升部分，我们通过宿舍管理、ESL 英语强化、升学路径来完成。</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>翰林中华书院国际部 © 2025 一期验证版</p>
+        </footer>
+    </div>
+</body>
+</html>
