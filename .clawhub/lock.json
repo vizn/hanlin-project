@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "whatsapp-business": {
+      "version": "1.0.4",
+      "installedAt": 1780903766450,
+      "registry": "https://clawhub.ai"
+    }
+  }
+}

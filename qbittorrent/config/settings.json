@@ -1,0 +1,11 @@
+{
+    "webui": {
+        "port": 8080,
+        "username": "admin",
+        "password": "qbitadmin"
+    },
+    "download": {
+        "autoTMM": true,
+        "completion": 9500
+    }
+}
