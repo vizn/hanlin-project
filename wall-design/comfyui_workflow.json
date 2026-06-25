@@ -1,0 +1,67 @@
+{
+  "last_node_id": 45,
+  "last_link_id": 12,
+  "prompt": {},
+  "version": 0.4,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Primitive3D",
+      "pos": {"x": -400, "y": 500},
+      "size": {"width": 200, "height": 80},
+      "title": "墙面 A-玻璃 Logo 区",
+      "flags": {},
+      "inputs": [],
+      "outputs": [{"name": "Primitive3D", "index": 0, "type": "PRIMITIVE"}]
+    },
+    {
+      "id": 2,
+      "type": "Primitive3D",
+      "pos": {"x": -150, "y": 480},
+      "size": {"width": 200, "height": 80},
+      "title": "墙面 B-白色案例区",
+      "flags": {},
+      "inputs": [],
+      "outputs": [{"name": "Primitive3D", "index": 0, "type": "PRIMITIVE"}]
+    },
+    {
+      "id": 3,
+      "type": "Primitive3D",
+      "pos": {"x": 50, "y": 460},
+      "size": {"width": 200, "height": 80},
+      "title": "墙面 C-白色理念区",
+      "flags": {},
+      "inputs": [],
+      "outputs": [{"name": "Primitive3D", "index": 0, "type": "PRIMITIVE"}]
+    },
+    {
+      "id": 45,
+      "type": "SAMplersAdvanced",
+      "pos": {"x": 1200, "y": 600},
+      "size": {"width": 300, "height": 200},
+      "flags": {},
+      "inputs": {
+        "sampler_name": ["euler"],
+        "scheduler": ["normal"],
+        "denoise": [1],
+        "sigma_min": [0.005],
+        "sigma_max": [50],
+        "s_churn": [0],
+        "s_tmin": [0],
+        "s_tmax": [50],
+        "s_noise": [1]
+      },
+      "outputs": []
+    }
+  ],
+  "links": [],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "version": 1,
+      "filename": "comfyui_wall_workflow_v1.json",
+      "name": "墙面设计 ComfyUI 工作流 v1"
+    }
+  }
+}
