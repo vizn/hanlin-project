@@ -1,0 +1,8 @@
+# Material Library
+newmtl glass
+Ka 0.9 0.9 1.0
+Kd 0.9 0.9 1.0
+Tr 0.7
+newmtl white
+Ka 0.95 0.95 0.95
+Kd 0.95 0.95 0.95
