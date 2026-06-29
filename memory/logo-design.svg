@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="960" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="960" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="40" y="50" font-family="'Microsoft YaHei', Arial, sans-serif" font-size="32" font-weight="bold" fill="#1a1a1a">翰林光年 - Logo 设计方案</text>
+  <line x1="40" y1="80" x2="1160" y2="80" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Design Concept -->
+  <rect x="40" y="95" width="1120" height="80" fill="#fff3e0" rx="8"/>
+  <text x="60" y="125" font-family="'Microsoft YaHei', Arial, sans-serif" font-size="16" font-weight="bold" fill="#f57c00">设计理念：</text>
+  <text x="60" y="148" font-family="'Microsoft YaHei', Arial, sans-serif" font-size="14" fill="#333">• "翰林"象征文化底蕴与学术传承</text>
+  <text x="60" y="170" font-family="'Microsoft YaHei', Arial, sans-serif" font-size="14" fill="#333">• "光年"代表国际化视野与光明未来</text>
+  <text x="60" y="192" font-family="'Microsoft YaHei', Arial, sans-serif" font-size="14" fill="#333">• 整体造型融合东方雅致与现代简约</text>
+  
+  <!-- Main Logo Design -->
+  <rect x="40" y="200" width="560" height="380" rx="8"/>
+  <text x="60" y="240" font-family="'Microsoft YaHei', Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">方案一：主 Logo（标准版）</text>
+  
+  <!-- Main Logo Graphic -->
+  <g transform="translate(70, 260)">
+    <!-- Abstract Globe Icon -->
+    <circle cx="120" cy="145" r="85" fill="#e3f2fd"/>
+    <path d="M 35 145 Q 120 20, 205 145 T 395 145 L 260 145 Z" fill="#2196f3" stroke="#1565c0" stroke-width="2"/>
+    <path d="M 28 145 Q 120 70, 212 145 L 120 145 Z" fill="#bbdefb" opacity="0.6"/>
+    
+    <!-- Traditional Chinese Element (翰林简化) -->
+    <text x="-30" y="190" font-family="'KaiTi', 'STKaiti', serif" font-size="68" letter-spacing="5" fill="#fff">翰</text>
+    <text x="240" y="190" font-family="'KaiTi', 'STKaiti', serif" font-size="68" letter-spacing="5" fill="#fff">林</text>
+    
+    <!-- Glow Effect -->
+    <circle cx="120" cy="145" r="35" fill="#ffeb3b" opacity="0.3"/>
+  </g>
+  
+  <!-- Logo Text -->
+  <rect x="650" y="240" width="500" height="80"/>
+  <text x="670" y="285" font-family="'Microsoft YaHei', sans-serif" font-size="36" font-weight="bold" fill="#1a1a1a">翰林光年</text>
+  
+  <!-- Subtitle -->
+  <rect x="650" y="340" width="500" height="50"/>
+  <text x="670" y="372" font-family="'Microsoft YaHei', sans-serif" font-size="12" fill="#666">一家专注于国际教育咨询的专业机构</text>
+  
+  <!-- Color Palette -->
+  <rect x="680" y="410" width="450" height="70"/>
+  <text x="700" y="440" font-family="'Microsoft YaHei', sans-serif" font-size="16" font-weight="bold" fill="#333">品牌色卡：</text>
+  
+  <!-- Primary Color -->
+  <rect x="700" y="450" width="60" height="50" fill="#2196f3"/>
+  <text x="780" y="480" font-family="'Microsoft YaHei', sans-serif" font-size="14" fill="#333">#2196f3</text>
+  <text x="780" y="500" font-family="'Microsoft YaHei', sans-serif" font-size="12" fill="#666">主色（科技蓝）</text>
+  
+  <!-- Secondary Color -->
+  <rect x="770" y="450" width="60" height="50" fill="#ff9800"/>
+  <text x="850" y="480" font-family="'Microsoft YaHei', sans-serif" font-size="14" fill="#333">#ff9800</text>
+  <text x="850" y="500" font-family="'Microsoft YaHei', sans-serif" font-size="12" fill="#666">辅助色（活力橙）</text>
+  
+  <!-- Accent Color -->
+  <rect x="700" y="530" width="60" height="50" fill="#e3f2fd"/>
+  <text x="780" y="560" font-family="'Microsoft YaHei', sans-serif" font-size="14" fill="#333">#e3f2fd</text>
+  <text x="780" y="580" font-family="'Microsoft YaHei', sans-serif" font-size="12" fill="#666">背景色（淡蓝灰）</text>
+  
+  <!-- Alternative Logo Concepts -->
+  <rect x="660" y="520" width="530" height="400"/>
+  <text x="680" y="560" font-family="'Microsoft YaHei', sans-serif" font-size="18" font-weight="bold" fill="#333">方案二：文字标识（极简版）</text>
+  
+  <!-- Minimalist Logo -->
+  <g transform="translate(700, 590)">
+    <!-- Stylized "H" and "L" combined with globe -->
+    <path d="M 20 140 L 80 60 L 140 140 L 140 190 L 80 130 L 20 190 Z" fill="#2196f3"/>
+    <circle cx="80" cy="145" r="35" stroke="#2196f3" stroke-width="6" fill="none" opacity="0.8"/>
+    
+    <!-- Text -->
+    <text x="200" y="175" font-family="'Microsoft YaHei', sans-serif" font-size="42" font-weight="bold" fill="#1a1a1a">翰林光年</text>
+  </g>
+  
+  <rect x="680" y="910" width="470" height="40"/>
+  <line x1="680" y1="925" x2="1150" y2="925" stroke="#ccc" stroke-width="1"/>
+  
+  <!-- Application Examples -->
+  <rect x="680" y="940" width="470" height="30"/>
+  <text x="700" y="965" font-family="'Microsoft YaHei', sans-serif" font-size="14" fill="#666">应用示例：</text>
+  
+  <!-- Wall A Application -->
+  <rect x="680" y="980" width="220" height="70" rx="5"/>
+  <text x="695" y="1015" font-family="'Microsoft YaHei', sans-serif" font-size="14" fill="#333">墙面 A（主背景墙）</text>
+  
+  <!-- Wall B Application -->
+  <rect x="920" y="980" width="220" height="70" rx="5"/>
+  <text x="935" y="1015" font-family="'Microsoft YaHei', sans-serif" font-size="14" fill="#333">墙面 B（案例区）</text>
+  
+  <!-- Wall C Application -->
+  <rect x="680" y="1070" width="220" height="70" rx="5"/>
+  <text x="695" y="1105" font-family="'Microsoft YaHei', sans-serif" font-size="14" fill="#333">墙面 C（理念区）</text>
+  
+  <!-- Material Notes -->
+  <rect x="700" y="1160" width="430" height="80"/>
+  <text x="720" y="1190" font-family="'Microsoft YaHei', sans-serif" font-size="14" fill="#333">• Logo：亚克力发光字，厚度 15-20mm</text>
+  <text x="720" y="1215" font-family="'Microsoft YaHei', sans-serif" font-size="14" fill="#333">• 文字：立体烤漆或 CNC 切割 + 喷漆</text>
+  <text x="720" y="1240" font-family="'Microsoft YaHei', sans-serif" font-size="14" fill="#333">• 建议内置 LED 灯带，色温 3500K（暖白光）</text>
+  
+</svg>

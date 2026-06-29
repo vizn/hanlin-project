@@ -1,0 +1,12 @@
+{
+  "name": "ppcha-promotional-video",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render PPCHA_Promotional_Video -o output.mp4"
+  },
+  "dependencies": {
+    "remotion": "^4.0.484"
+  }
+}

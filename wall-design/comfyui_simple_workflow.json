@@ -1,0 +1,63 @@
+{
+  "last_node_id": 25,
+  "last_link_id": 8,
+  "version": 0.4,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Primitive3D",
+      "pos": {"x": -300, "y": 500},
+      "size": {"width": 200, "height": 80},
+      "title": "Wall A (Glass Logo)",
+      "flags": {},
+      "inputs": [],
+      "outputs": [{"name": "Primitive3D", "index": 0, "type": "PRIMITIVE"}]
+    },
+    {
+      "id": 2,
+      "type": "Primitive3D", 
+      "pos": {"x": -50, "y": 480},
+      "size": {"width": 200, "height": 80},
+      "title": "Wall B (White Case Studies)",
+      "flags": {},
+      "inputs": [],
+      "outputs": [{"name": "Primitive3D", "index": 0, "type": "PRIMITIVE"}]
+    },
+    {
+      "id": 3,
+      "type": "Primitive3D",
+      "pos": {"x": 250, "y": 460},
+      "size": {"width": 200, "height": 80},
+      "title": "Wall C (White Philosophy)",
+      "flags": {},
+      "inputs": [],
+      "outputs": [{"name": "Primitive3D", "index": 0, "type": "PRIMITIVE"}]
+    },
+    {
+      "id": 25,
+      "type": "SaveImage",
+      "pos": {"x": 1200, "y": 400},
+      "size": {"width": 300, "height": 180},
+      "flags": {},
+      "inputs": {
+        "filename_prefix": ["wall_render"],
+        "output_dir": ["/root/.openclaw/workspace/wall-design/comfyui_output"],
+        "image": [{"name": "images", "type": "IMAGE"}]
+      },
+      "outputs": []
+    }
+  ],
+  "links": [
+    {"index": 0, "type": 25, "start": 1, "end": 0},
+    {"index": 0, "type": 25, "start": 2, "end": 0},
+    {"index": 0, "type": 25, "start": 3, "end": 0}
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "version": 1,
+      "filename": "comfyui_simple_wall_workflow.json",
+      "name": "墙面设计简化工作流"
+    }
+  }
+}

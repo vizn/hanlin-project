@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="960" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="960" fill="#f5f5f5"/>
+  
+  <!-- Title -->
+  <text x="40" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#333">墙面布局示意图</text>
+  <line x1="40" y1="75" x2="1160" y2="75" stroke="#ccc" stroke-width="1"/>
+  
+  <!-- Wall A (Main Background - Logo) -->
+  <rect x="40" y="90" width="340" height="280" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="55" y="130" font-family="Arial" font-size="18" font-weight="bold" fill="#1565c0">墙面 A (主背景墙)</text>
+  <text x="55" y="160" font-family="Arial" font-size="14" fill="#555">尺寸：240cm × 300cm</text>
+  <rect x="70" y="180" width="260" height="60" rx="5" fill="#fff" stroke="#ddd"/>
+  <text x="90" y="210" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#ffc107">LOGO</text>
+  <rect x="70" y="250" width="260" height="40"/>
+  <text x="90" y="285" font-family="Arial" font-size="20" text-anchor="middle" fill="#e91e63">品牌标语</text>
+  <circle cx="385" cy="220" r="40" fill="#ffeb3b" opacity="0.3"/>
+  <text x="385" y="225" font-family="Arial" font-size="14" text-anchor="middle">留白区域</text>
+  
+  <!-- Wall B (Case Studies + Schools) -->
+  <rect x="420" y="90" width="380" height="280" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+  <text x="435" y="130" font-family="Arial" font-size="18" font-weight="bold" fill="#2e7d32">墙面 B (案例区)</text>
+  <text x="435" y="160" font-family="Arial" font-size="14" fill="#555">尺寸：240cm × 600cm</text>
+  
+  <!-- Wall B - Left: Case Studies -->
+  <rect x="450" y="180" width="200" height="180" rx="8"/>
+  <text x="470" y="210" font-family="Arial" font-size="16" font-weight="bold" fill="#388e3c">留学生案例</text>
+  <!-- Sample case cards -->
+  <rect x="455" y="215" width="90" height="55" rx="4" fill="#fff" stroke="#ccc"/>
+  <circle cx="500" cy="240" r="8" fill="#ddd"/>
+  <text x="465" y="270" font-family="Arial" font-size="12">案例 1</text>
+  
+  <rect x="560" y="215" width="90" height="55" rx="4" fill="#fff" stroke="#ccc"/>
+  <circle cx="605" cy="240" r="8" fill="#ddd"/>
+  <text x="570" y="270" font-family="Arial" font-size="12">案例 2</text>
+  
+  <rect x="455" y="285" width="90" height="55" rx="4" fill="#fff" stroke="#ccc"/>
+  <circle cx="500" cy="310" r="8" fill="#ddd"/>
+  <text x="465" y="335" font-family="Arial" font-size="12">案例 3</text>
+  
+  <!-- Wall B - Right: Schools -->
+  <rect x="675" y="180" width="185" height="180" rx="8"/>
+  <text x="695" y="210" font-family="Arial" font-size="16" font-weight="bold" fill="#388e3c">合作院校</text>
+  
+  <!-- Sample school logos -->
+  <rect x="680" y="215" width="75" height="40" rx="3"/>
+  <circle cx="718" cy="235" r="6" fill="#bbb"/>
+  <text x="690" y="260" font-family="Arial" font-size="10">UK</text>
+  
+  <rect x="680" y="265" width="75" height="40" rx="3"/>
+  <circle cx="718" cy="285" r="6" fill="#bbb"/>
+  <text x="690" y="310" font-family="Arial" font-size="10">USA</text>
+  
+  <!-- Wall C (Philosophy + Services) -->
+  <rect x="820" y="90" width="340" height="280" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+  <text x="835" y="130" font-family="Arial" font-size="18" font-weight="bold" fill="#e65100">墙面 C (理念区)</text>
+  <text x="835" y="160" font-family="Arial" font-size="14" fill="#555">尺寸：240cm × 600cm</text>
+  
+  <!-- Wall C - Top: Philosophy -->
+  <rect x="850" y="180" width="300" height="90"/>
+  <text x="870" y="205" font-family="Arial" font-size="16" font-style="italic" fill="#f57c00">"我们的留学理念"</text>
+  <line x1="850" y1="230" x2="1150" y2="230" stroke="#ffa000" stroke-width="1"/>
+  <text x="865" y="255" font-family="Arial" font-size="14">以学员为中心，个性化定制</text>
+  <text x="865" y="275" font-family="Arial" font-size="14">透明化服务，全程陪伴成长</text>
+  
+  <!-- Wall C - Bottom: Services -->
+  <rect x="850" y="300" width="300" height="90"/>
+  <text x="870" y="325" font-family="Arial" font-size="16" font-weight="bold" fill="#f57c00">业务范围</text>
+  <ul style="margin: 0; padding-left: 30px;">
+    <li style="font-size: 14px; margin-bottom: 5px;"><span>✓</span> 申请规划咨询</li>
+    <li style="font-size: 14px; margin-bottom: 5px;"><span>✓</span> 文书指导服务</li>
+    <li style="font-size: 14px; margin-bottom: 5px;"><span>✓</span> 签证办理协助</li>
+    <li style="font-size: 14px;">"><span>✓</span> 行前准备培训</li>
+  </ul>
+  
+  <!-- Legend -->
+  <text x="40" y="380" font-family="Arial" font-size="16" font-weight="bold" fill="#333">图例说明：</text>
+  <rect x="40" y="395" width="20" height="20" fill="#e3f2fd"/>
+  <text x="70" y="410" font-family="Arial" font-size="14">亚克力材质 (Logo/文字)</text>
+  
+  <rect x="280" y="395" width="20" height="20" fill="#f5f5f5"/>
+  <text x="310" y="410" font-family="Arial" font-size="14">喷绘材质 (背景板)</text>
+  
+  <line x1="580" y1="395" x2="920" y2="395" stroke="#aaa"/>
+  <text x="595" y="410" font-family="Arial" font-size="14">地面分割线</text>
+  
+  <!-- Material Notes -->
+  <rect x="40" y="440" width="1120" height="80" fill="#f9f9f9" stroke="#ddd"/>
+  <text x="60" y="470" font-family="Arial" font-size="14" font-weight="bold">材质工艺说明：</text>
+  <text x="60" y="495" font-family="Arial" font-size="13">• Logo/文字：亚克力发光字或立体烤漆，建议厚度 12-15mm</text>
+  <text x="60" y="515" font-family="Arial" font-size="13">• 背景板：高清喷绘布 + 铝塑板复合，表面覆哑光膜</text>
+  <text x="60" y="535" font-family="Arial" font-size="13">• 亚克力透光率约 92%，建议内置 LED 灯带（色温 3000-3500K）</text>
+  <text x="60" y="555" font-family="Arial" font-size="13">• 喷绘布分辨率≥360dpi，色彩管理采用 CMYK+ 专色</text>
+  
+</svg>

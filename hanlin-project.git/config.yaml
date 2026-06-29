@@ -1,0 +1,96 @@
+studio_name: EducationStudio
+version: 2.0.0
+
+models:
+  primary: ollama/qwen3.5:9b
+  fallback: lmstudio/qwen/qwen3.5-9b
+
+comfyui:
+  url: http://192.168.199.112:8188
+  default_workflow: workflow.json
+  output_dir: outputs/Images
+
+subagents:
+  creative_director:
+    enabled: true
+    model: ollama/qwen3.5:9b
+    skill: skills/CreativeDirector/SKILL.md
+    description: "Analyzes briefs, plans creative direction, delegates to specialists"
+  copy_writer:
+    enabled: true
+    model: ollama/qwen3.5:9b
+    skill: skills/CopyWriter/SKILL.md
+    description: "Writes marketing copy with image markers"
+  brochure_designer:
+    enabled: true
+    model: ollama/qwen3.5:9b
+    skill: skills/BrochureDesigner/SKILL.md
+    description: "Assembles copy + images into brochure layouts"
+  comfyui_designer:
+    enabled: true
+    model: ollama/qwen3.5:9b
+    skill: skills/ComfyUIDesigner/SKILL.md
+    description: "Generates images via ComfyUI for brochures/posters"
+  ppt_designer:
+    enabled: true
+    model: ollama/qwen3.5:9b
+    skill: skills/PPTDesigner/SKILL.md
+    description: "Converts markdown to branded DOCX, PDF, PPT via scripts"
+  brand_manager:
+    enabled: true
+    model: ollama/qwen3.5:9b
+    skill: skills/BrandManager/SKILL.md
+    description: "Reviews outputs for brand compliance (colors, tone, messages)"
+  education_consultant:
+    enabled: true
+    model: ollama/qwen3.5:9b
+    skill: skills/EducationConsultant/EducationConsultant.yaml
+    description: "Verifies education content accuracy"
+  business_planner:
+    enabled: true
+    model: ollama/qwen3.5:9b
+    skill: skills/BusinessPlanner/BusinessPlanner.yaml
+    description: "Writes business plans and proposals"
+
+workflow_guide: Workflow.md
+
+prompts:
+  image_templates: prompts/image_prompts.md
+
+export:
+  brand_template: scripts/brand_template.json
+  scripts:
+    md2docx: scripts/md2docx.py
+    md2pdf: scripts/md2pdf.py
+    md2ppt: scripts/md2ppt.py
+    export_all: scripts/export_all.py
+  formats:
+    - DOCX
+    - PDF
+    - PPT
+
+scripts:
+  generate_brochure: scripts/generate_brochure.sh
+  generate_project_description: scripts/generate_project_description.sh
+
+knowledge_base:
+  - 中华书院
+  - MK语言学校
+  - 华侨生
+  - 菲律宾教育
+  - 品牌规范
+  - 国际学校案例
+
+output_formats:
+  - PDF
+  - PPT
+  - DOCX
+  - Images
+  - Markdown
+
+output_dirs:
+  Markdown: outputs/Markdown
+  Images: outputs/Images
+  PDF: outputs/PDF
+  PPT: outputs/PPT
+  DOCX: outputs/DOCX

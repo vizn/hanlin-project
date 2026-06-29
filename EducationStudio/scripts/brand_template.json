@@ -1,0 +1,46 @@
+{
+  "brand": "翰林光年",
+  "colors": {
+    "primary": "#2196F3",
+    "secondary": "#FF9800",
+    "accent": "#E3F2FD",
+    "text_dark": "#333333",
+    "text_light": "#666666",
+    "white": "#FFFFFF",
+    "background": "#FAFAFA"
+  },
+  "fonts": {
+    "heading": "Microsoft YaHei",
+    "body": "Microsoft YaHei",
+    "english": "Arial"
+  },
+  "spacing": {
+    "margin_mm": 20,
+    "line_spacing": 1.5
+  },
+  "logo": {
+    "path": "assets/Logos/placeholder.png",
+    "max_width_mm": 30
+  },
+  "ppt": {
+    "slide_width_cm": 33.867,
+    "slide_height_cm": 19.05,
+    "title_font_size": 36,
+    "subtitle_font_size": 20,
+    "body_font_size": 16,
+    "accent_bar": true
+  },
+  "docx": {
+    "heading1_size": 22,
+    "heading2_size": 16,
+    "heading3_size": 14,
+    "body_size": 12
+  },
+  "pdf": {
+    "page_size": "A4",
+    "margin_top": 25,
+    "margin_bottom": 20,
+    "margin_left": 25,
+    "margin_right": 20
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "3": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "SDXL"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [3, "CLIP"],
+      "text": "{prompt}",
+      "token_merger": 0
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [3, "CLIP"],
+      "text": "{negative_prompt}",
+      "token_merger": 0
+    }
+  },
+  "6": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "height": 768,
+      "width": 1024,
+      "batch_size": 1
+    }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "cfg": 7.5,
+      "denoise": 1,
+      "dtype": "float32",
+      "num_inference_steps": 30,
+      "seed": [0, "seed"],
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "start_at_step": -1,
+      "stop_at_step": -1,
+      "positive": [4, "CONDITIONING"],
+      "negative": [5, "CONDITIONING"]
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "decode": [7, "LATENTS"],
+      "vae": [3, "VAE"]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "EducationStudio_Poster",
+      "image_format": "png"
+    }
+  },
+  "10": {
+    "class_type": "PreviewImage",
+    "inputs": {
+      "images": [9, "IMAGE"]
+    }
+  }
+}

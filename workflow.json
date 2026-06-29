@@ -1,0 +1,9 @@
+{
+    "3": {"class_type": "CLIPTextEncode", "inputs": {"clip": [1], "text": "educational consulting center interior wall design"}},
+    "4": {"class_type": "EmptyLatentImage", "inputs": {"batch_size": 1, "height": 768, "width": 512}},
+    "5": {"class_type": "KSampler", "inputs": {"denoise": 1, "latent_image": [4], "model": [2], "negative_clip": [6], "num_inference_steps": 30, "prompt": {"inputs": ["3"], "class_type": "CLIPTextEncode"}, "seed": 123}},
+    "6": {"class_type": "CLIPTextEncode", "inputs": {"clip": [7], "text": ""}},
+    "7": {"class_type": "CheckpointLoaderSimple", "inputs": {"ckpt_name": ["sd_xl_base_1.0.safetensors"]}},
+    "8": {"class_type": "VAEDecode", "inputs": {"decode_latents": [5], "vae": [9]}},
+    "9": {"class_type": "SaveImage", "inputs": {"filename_prefix": ["wall_design"], "image": [8]}}
+}

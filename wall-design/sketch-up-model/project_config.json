@@ -1,0 +1,36 @@
+{
+  "project_name": "Hanlin_Wall_Design",
+  "wall_a": {
+    "name": "Logo_Wall_Glass",
+    "height_cm": 240,
+    "width_cm": 300
+  },
+  "wall_b": {
+    "name": "Case_Studies_White",
+    "height_cm": 240,
+    "width_cm": 600
+  },
+  "wall_c": {
+    "name": "Philosophy_White",
+    "height_cm": 240,
+    "width_cm": 600
+  },
+  "materials": {
+    "glass": {
+      "name": "Double_Laminated_Glass",
+      "thickness_mm": 18.14,
+      "properties": {
+        "transparent": true,
+        "refraction": 1.52
+      }
+    },
+    "white_wall": {
+      "name": "White_Painted_Wall",
+      "color_rgb": [
+        0.95,
+        0.95,
+        0.95
+      ]
+    }
+  }
+}
